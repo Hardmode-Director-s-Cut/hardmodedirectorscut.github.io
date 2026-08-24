@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>room_chipmunkcheck</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/x-icon" href="/icon.ico">
+</head>
+<body class = "noscroll">
+    <div class = "chipmunkcheck", id="dogcheck">
+      <img
+        src="zzz.png"
+        alt="chipmunk"
+        class="chipmunkcheck2"
+        id="dog"
+        style="cursor: pointer; opacity: 1"
+        width="700" height="255"
+        
+      >
+        <img
+        src="zzz.png"
+        alt="chipmunk"
+        class="chipmunkcheck2"
+        id="dog2"
+        style="cursor: pointer; opacity: 0"
+        width="700" height="255"
+        
+      >
+    </div>
+
+  
+  <script>
+
+      
+      const dcheck = document.getElementById('dogcheck');
+      const dimg = document.getElementById('dog');
+      const dimg2 = document.getElementById('dog2');
+      const dsfx = new Audio('404.ogg');
+      const dimg2src = dimg2.src;
+      dcheck.addEventListener('click', () => {
+        if (dimg.style.opacity == 1) {
+            dimg.style.opacity = 0;
+            dimg2.style.opacity = 1;
+            if (dimg2.src == dimg2src)
+                dimg2.src = 'zzz.gif';
+            dsfx.play();
+        }
+        else {
+            dimg.style.opacity = 1;
+            dimg2.style.opacity = 0;
+            dsfx.pause();
+        }
+      });
+  </script>
+</body>
+</html>

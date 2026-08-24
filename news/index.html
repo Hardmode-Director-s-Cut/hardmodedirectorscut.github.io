@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hard Mode: Director's Cut - News & Progress Reports</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/x-icon" href="/icon.ico">
+</head>
+<body>
+
+
+
+
+  <!-- NavBar -->
+<nav>
+  <button class="menu-toggle">☰</button>
+    <ul class="navbar">
+      <li><a href="/">HOME</a></li> <!-- index.html is unnecessary when using localhost or uploading site to github pages -->
+      <li><a href="/about/">ABOUT</a></li>
+	  <li><a href="/help/">FAQ / CONTACT</a></li>
+	  <li><a href="/news/">PROGRESS REPORTS</a></li>
+	  <li><a href="/credits/">CREDITS</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content container">
+    <a href = "/">
+      <img src="/undertaleHARDMODE.png" alt="UT Hardmode" width="700" height="255" class = "logo" style="image-rendering: pixelated;">
+    </a>
+	    <p><h2>NEWS & PROGRESS REPORTS</h2>  
+  </div>
+  <!-- Progress Report -->
+  <a class="progress_report" href="/directorscut-report-062026/" style="text-decoration: none; color: white;"> <!--The main class-->
+    <img src="/assets/summerdog.gif" class="progress_report_image"> <!--Image-->
+    <div class="flexcolumn">                                  <!--A div to order the text itself-->
+      <p class="progress_report_text yellow_text">REPORT 2</p><!--Yellow text at the top-->
+      <h5 class="progress_report_text" >Summer 2026</h5>      <!--White Bold text-->
+      <p class="progress_report_text gray_text small_text" style="line-height:calc(1.25 / .675);">It's... really... HOT!</p> <!--Bottom Gray small text-->
+    </div> <!--Close flex column-->
+  </a> <!--Close progress report-->
+
+  <a class="progress_report" href="/directorscut-report-022026/" style="text-decoration: none; color: white;">
+    <img src="/winter2026.gif" class="progress_report_image">
+    <div class="flexcolumn">
+      <p class="progress_report_text yellow_text">REPORT 1</p>
+      <h5 class="progress_report_text" >Winter 2026</h5>
+      <p class="progress_report_text gray_text small_text" style="line-height:calc(1.25 / .675);">Ah... Winter.</p>
+    </div>
+  </a>
+
+  <a class="progress_report" href="https://gamejolt.com/p/undertale-hard-mode-director-s-cut-update-003-winter-show-of-b-dnqhjmus" style="text-decoration: none; color: white;">
+    <img src="/hardpapyrusmode1.png" class="progress_report_image">
+    <div class="flexcolumn">
+      <p class="progress_report_text yellow_text">UPDATE 3</p>
+      <h5 class="progress_report_text" >Fall 2025</h5>
+      <p class="progress_report_text gray_text small_text" style="line-height:calc(1.25 / .675);">Winter Show of Bones!</p>
+    </div>
+  </a>
+
+ <a class="progress_report" href="https://gamejolt.com/p/undertale-hard-mode-director-s-cut-update-002-the-inferno-befo-wvsndiwk" style="text-decoration: none; color: white;">
+    <img src="/assets/update2icon.png" class="progress_report_image">
+    <div class="flexcolumn">
+      <p class="progress_report_text yellow_text">UPDATE 2</p>
+      <h5 class="progress_report_text" >May 2025</h5>
+      <p class="progress_report_text gray_text small_text" style="line-height:calc(1.25 / .675);">The Inferno Before the Frost...</p>
+    </div>
+  </a>
+
+   <a class="progress_report" href="https://gamejolt.com/p/undertale-hard-mode-director-s-cut-update-001-read-article-i6usnj47" style="text-decoration: none; color: white;">
+    <img src="/assets/update1icon.png" class="progress_report_image">
+    <div class="flexcolumn">
+      <p class="progress_report_text yellow_text">UPDATE 1</p>
+      <h5 class="progress_report_text" >March 2025</h5>
+    </div>
+  </a>
+
+	<div style="text-align: center; margin-top: 1px; margin-bottom: 13rem">
+	</div> 
+  </div>
+  
+    <!-- Footer -->
+  <footer>
+      <img
+        src="/dog.png"
+        alt="chipmunk"
+        class="chipmunk"
+        id="dog"
+        style="cursor: pointer;"
+      >
+      <div class="footer-icons">
+	
+	
+	    <!-- Youtube -->
+      <a href="https://www.youtube.com/channel/UCPFXStM4CpxEg41jxC_Wg1A" target="_blank" style="text-decoration: none; color: white;">
+        <img src="/UTH_youtube.png" alt="" class="icon">
+      </a>
+	  
+	  	<!-- GameJolt -->	  
+	  <a href="https://gamejolt.com/games/uthardmodedc/973954" target="_blank" style="text-decoration: none; color: white;">
+        <img src="/UTH_gamejolt.png" alt="" class="icon">
+      </a>
+	  
+	  	<!-- Game Bannana -->	  
+	  <a href="https://gamebanana.com/wips/91188" target="_blank" style="text-decoration: none; color: white;">
+        <img src="/UTH_gamebanna.png" alt="" class="icon">
+      </a>
+	  
+	  	<!-- Soundcloud -->	  
+	  <a href="https://soundcloud.com/vu0gjz2ck9ta/sets/hard-mode-directors-cut-demo" target="_blank" style="text-decoration: none; color: white;">
+        <img src="/UTH_soundcl.png" alt="" class="icon">
+      </a>
+	  
+    </div>
+      <div class="credits" style="margin-top:20px; margin-bottom: 20px;">
+          UNDERTALE © Toby Fox 2013–2026; <br>DELTARUNE © Toby Fox 2018–2026. <br> All rights reserved.<br><br>
+          Hard Mode: Director’s Cut<br>© Directors Crew 2025-2026<br>
+          <br>
+          (We are NOT affiliated with Toby Fox!)
+        </div>
+        
+  </footer>
+  
+  <script>
+    document.querySelector('.menu-toggle')
+      .addEventListener('click', () => {
+        document.querySelector('.navbar').classList.toggle('active');
+      });
+      
+      const dimg = document.getElementById('dog');
+      const dsfx = new Audio('/dog.wav');
+      dimg.addEventListener('click', () => {
+        dimg.src = '/doghappy.png';
+        dsfx.play();
+        dsfx.onended = () => {
+          dimg.src = '/dog.png';
+        };
+      });
+  </script>
+  
+  
+</body>
+</html>

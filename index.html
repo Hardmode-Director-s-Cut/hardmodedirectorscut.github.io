@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Hard Mode: Director's Cut</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/x-icon" href="/icon.ico">
+</head>
+<body>
+  <!-- NavBar -->
+<nav>
+    <button class="menu-toggle">☰</button>
+    <ul class="navbar">
+      <li><a href="/">HOME</a></li> <!-- index.html is unnecessary when using localhost or uploading site to github pages -->
+      <li><a href="/about/">ABOUT</a></li>
+	  <li><a href="/help/">FAQ / CONTACT</a></li>
+	  <li><a href="/news/">PROGRESS REPORTS</a></li>
+	  <li><a href="/credits/">CREDITS</a></li>
+    </ul>
+  </nav>
+  <!-- Main Content -->
+  <div class="content container">
+      <a href = "/">
+        <img src="/undertaleHARDMODE.png" alt="UT Hardmode" width="700" height="255" class="logo" style="margin-bottom: 30px; image-rendering: pixelated;">
+      </a>
+    
+    <div class="video-wraps">
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/m2Exjqx80Ig"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+
+
+
+	<h1 class="header-title">
+	  PLAY THE DEMO! (v1.08) <br>
+	  <span style="color: #FFFF00;">AVAILABLE ON:</span>
+	</h1>
+
+
+
+	<!-- Game Download Links -->
+
+<div style="text-align: center; background-color: black; padding: 1px;">
+  <!-- GameJolt -->
+  <div style="display: inline-block; margin: 40px;">
+    <a href="https://gamejolt.com/games/uthardmodedc/973954" target="_blank" style="text-decoration: none; color: white;">
+      <img src="/UTH_gamejolt.png" alt="Game Jolt" style="width: 80px; image-rendering: pixelated;">
+	<div style="margin-top: 10px; font-size: 30px;">Game Jolt</div>
+    </a>
+  </div>
+
+  <!-- GameBanana -->
+  <div style="display: inline-block; margin: 40px;">
+    <a href="https://gamebanana.com/wips/91188" target="_blank" style="text-decoration: none; color: white;">
+      <img src="/UTH_gamebanna.png" alt="GameBanana" style="width: 80px; image-rendering: pixelated;">
+      	<div style="margin-top: 10px; font-size: 30px;">GameBanana</div>
+    </a>
+  </div>
+  
+</div>
+
+
+<h1 class="header-title">
+  LISTEN TO THE (DEMO) SOUNDTRACK!<br>
+</h1>
+
+<div style="text-align: center; background-color: black; padding: 1px;">
+  
+    <!-- YouTube -->
+  <div style="display: inline-block; margin: 40px;">
+    <a href="https://www.youtube.com/channel/UCPFXStM4CpxEg41jxC_Wg1A" target="_blank" style="text-decoration: none; color: white;">
+      <img src="/UTH_youtube.png" alt="Youtube" style="width: 80px; image-rendering: pixelated;">
+      	<div style="margin-top: 10px; font-size: 30px;">YouTube</div>
+    </a>
+  </div>
+  
+      <!-- Sound Cloud -->
+  <div style="display: inline-block; margin: 40px;">
+    <a href="https://soundcloud.com/vu0gjz2ck9ta/sets/hard-mode-directors-cut-demo" target="_blank" style="text-decoration: none; color: white;">
+      <img src="/UTH_soundcl.png" alt="Soundcloud" style="width: 80px; image-rendering: pixelated;">
+     	<div style="margin-top: 10px; font-size: 30px;">SoundCloud</div>
+    </a>
+  </div>
+  
+</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	  <h1>NEWS &amp; PROGRESS REPORTS</h1>
+
+  <!-- White horizontal line -->
+  <div style="
+    width: 80%;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto 40px auto;
+  "></div>
+
+  <!-- Latest update -->
+  <h2 style="color: inherit; font-size: 40px; margin-top: 0;">
+    Latest Progress Report:
+  </h2>
+
+<h1 style="font-size: 60px; margin: 0;">
+  <a href="/directorscut-report-062026/" style="color: #FFFF00; text-decoration: none;">
+    REPORT 2 - SUMMER 2026
+  </a>
+</h1>
+
+
+<h3 style="color: #999; font-size: 34px; margin-bottom: 90px;">
+    It's... really... HOT!
+  </h3>
+
+	<div style="text-align: center; margin-top: 1px;">
+  </div>
+  <footer>
+      <img
+        src="/dog.png"
+        alt="chipmunk"
+        class="chipmunk"
+        id="dog"
+        style="cursor: pointer;"
+      >
+      <div class="credits" style="margin-bottom: 20px;">
+          UNDERTALE © Toby Fox 2013–2026; <br>DELTARUNE © Toby Fox 2018–2026. <br> All rights reserved.<br><br>
+          Hard Mode: Director’s Cut<br>© Directors Crew 2025-2026<br>
+          <br>
+          (We are NOT affiliated with Toby Fox!)
+        </div>
+  </footer>
+  
+  <script>
+    document.querySelector('.menu-toggle')
+      .addEventListener('click', () => {
+        document.querySelector('.navbar').classList.toggle('active');
+      });
+      
+      const dimg = document.getElementById('dog');
+      const dsfx = new Audio('/dog.wav');
+      dimg.addEventListener('click', () => {
+        dimg.src = '/doghappy.png';
+        dsfx.play();
+        dsfx.onended = () => {
+          dimg.src = '/dog.png';
+        };
+      });
+  </script>
+</body>
+</html>

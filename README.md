@@ -1,2 +1,3 @@
-# Hardmode-Director-s-Cut-Website
-web site
+The dev repo of the UT Hard Moded Directors Cut website
+...
+Theres no reason we should write anything here is there

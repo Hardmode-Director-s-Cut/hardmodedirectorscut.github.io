@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hard Mode: Director's Cut !?</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/x-icon" href="/icon.ico">
+</head>
+<body>
+
+  <nav>
+    <button class="menu-toggle">☰</button>
+    <ul class="navbar">
+      <li><a href="/">HOME</a></li>
+      <li><a href="/about/">ABOUT</a></li>
+      <li><a href="/help/">FAQ / CONTACT</a></li>
+      <li><a href="/news/">PROGRESS REPORTS</a></li>
+      <li><a href="/credits/">CREDITS</a></li>
+    </ul>
+  </nav>
+
+  <div class="content container">
+    <a href = "/">
+      <img src="/undertaleHARDMODE.png" alt="UT Hardmode" width="700" height="255" class="logo" style="image-rendering: pixelated;">
+    </a>
+    <p>... is a mod that aims to complete <br> UNDERTALE's unfinished Hard Mode!</p>
+    
+    <img src="/UTH_screenshot1.png" alt="Screenshot 1" width="1287" height="480" style="max-width: 100%; height: auto;">
+      
+    <p>It intends to remain somewhat faithful to Toby's vision,<br> but also with lots of new flavor from the team, the Directors Crew.</p>
+
+    <h2>Things have changed in this world since you <br> last saw it.</h2>
+    <h2>Everyone has gotten stronger, and the world <br> became hellish to any humans who dare enter!</h2>
+    <h2>Though, it seems that a lot of this is due to a <br> "memo" every monster has received.</h2>
+    <h2>Despite this, each enemy can still be "defeated" nonviolently.</h2>
+    <h2>Fix faces! Build snow statues! Repair broken marriages!</h2>
+    <h2>Or, ignore this choice and rain destruction <br> upon your foes! After all, they attacked <br> you first.</h2>
+
+    <img src="/UTH_screenshot2.png" alt="Screenshot 2" width="1287" height="480" style="max-width: 100%; height: auto;">
+      
+    <h2>Your journey will take <br> determination. A lot of it!</h2>
+    <h2>As each adversary's bullet patterns<br> have gotten more difficult.</h2>
+    <div style="color: #BBBBBB; font-size: 10px;">(Don't worry, some are real hard!!!)</div>
+  
+    <img src="/UTH_screenshot3.png" alt="Screenshot 3" width="1287" height="480" style="max-width: 100%; height: auto;">
+      
+    <h2>This mod also has lots more features, <br> such as:</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li><h2>* Many additions to the RUINS, such as harder puzzles, overworld sprites for Final Froggit and Parsnik, and more.</h2></li>
+      <li><h2>* Brand new equipment, with special features within them!</h2></li>
+      <li><h2>* Hellishly difficult hidden bosses!</h2></li>
+      <li><h2>* Brand new cutscene dialogue and flavor text, all while staying true to Toby Fox's signature humor.</h2></li>
+      <li><h2>* All-new Trophies, alongside the existing PS4 ones!</h2></li>
+      <li><h2>* An Extras menu with helpful settings, such as: Trophy viewing, save data management, etc.</h2></li>
+    </ul>
+
+    <div style="color: #BBBBBB; font-size: 20px;">"Hey, it's Mr. Sunshine!"</div>
+    <div style="color: #BBBBBB; font-size: 40px;">SHUT UP!!!</div>
+
+    <h2 style="margin-bottom: 90px;">That's all for our little project.<br> We hope you will enjoy it.<br>We worked very hard on it!</h2>
+  </div>
+
+  <footer>
+    <img
+      src="/dog.png"
+      alt="chipmunk"
+      class="chipmunk"
+      id="dog"
+      style="cursor: pointer;"
+    >
+    
+    <div class="footer-icons">
+	
+	
+	    <!-- Youtube -->
+      <a href="https://www.youtube.com/channel/UCPFXStM4CpxEg41jxC_Wg1A" target="_blank" style="text-decoration: none; color: white;">
+        <img src="/UTH_youtube.png" alt="" class="icon">
+      </a>
+	  
+	  	<!-- GameJolt -->	  
+	  <a href="https://gamejolt.com/games/uthardmodedc/973954" target="_blank" style="text-decoration: none; color: white;">
+        <img src="/UTH_gamejolt.png" alt="" class="icon">
+      </a>
+	  
+	  	<!-- Game Bannana -->	  
+	  <a href="https://gamebanana.com/wips/91188" target="_blank" style="text-decoration: none; color: white;">
+        <img src="/UTH_gamebanna.png" alt="" class="icon">
+      </a>
+	  
+	  	<!-- Soundcloud -->	  
+	  <a href="https://soundcloud.com/vu0gjz2ck9ta/sets/hard-mode-directors-cut-demo" target="_blank" style="text-decoration: none; color: white;">
+        <img src="/UTH_soundcl.png" alt="" class="icon">
+      </a>
+	  
+    </div>
+      <div class="credits" style="margin-top:20px; margin-bottom: 20px;">
+        UNDERTALE © Toby Fox 2013–2026; <br>DELTARUNE © Toby Fox 2018–2026. <br> All rights reserved.<br><br>
+        Hard Mode: Director’s Cut<br>© Directors Crew 2025-2026<br>
+        <br>
+        (We are NOT affiliated with Toby Fox!)
+      </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.navbar').classList.toggle('active');
+    });
+
+    const dimg = document.getElementById('dog');
+    const dsfx = new Audio('/dog.wav');
+
+    dimg.addEventListener('click', () => {
+      dimg.src = '/doghappy.png';
+      dsfx.play();
+      dsfx.onended = () => {
+        dimg.src = '/dog.png';
+      };
+    });
+  </script>
+</body>
+</html>
