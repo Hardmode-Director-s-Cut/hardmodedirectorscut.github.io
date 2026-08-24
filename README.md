@@ -1,3 +1,1 @@
-The dev repo of the UT Hard Moded Directors Cut website
-...
-Theres no reason we should write anything here is there
+Repository of Undertale Hardmode Director's Cut mod's website. We are not affiliated with Toby Fox.
