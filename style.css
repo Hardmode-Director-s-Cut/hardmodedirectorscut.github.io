@@ -280,6 +280,9 @@ footer {
   max-width: min(100%, 600px);
   height: auto;
 }
+.preport video {
+  width: min(640px, 90%);
+}
 .question {
   font-size: 18px;
   font-family: "8bitOperatorPlus-Bold";
