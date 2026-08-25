@@ -283,6 +283,11 @@ footer {
 .preport video {
   width: min(640px, 90%);
 }
+.preport iframe {
+  width: min(560px, 95%);
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
 .question {
   font-size: 18px;
   font-family: "8bitOperatorPlus-Bold";
