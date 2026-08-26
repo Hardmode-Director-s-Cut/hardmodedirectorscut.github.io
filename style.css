@@ -268,8 +268,8 @@ footer {
 .regular_text {
   font-family: "8bitOperatorPlus-Regular";
   text-align: left;
-  max-width: 50%;
-  min-width: 50%;
+  max-width: min(90%, 34rem);
+  min-width: min(90%, 34rem);
 }
 .regular_text p{
   font-size: 1rem;
@@ -359,7 +359,7 @@ footer {
 }
 .credits_category {
   align-items: center;
-  display:block;
+
   width: min(700px, 95%);
 }
 .credits_title {
