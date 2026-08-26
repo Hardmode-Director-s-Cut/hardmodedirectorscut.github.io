@@ -358,10 +358,9 @@ footer {
   content: "Resolve: ";
 }
 .credits_category {
-  justify-content: left;
   align-items: center;
-  text-align:left;
-  width: 60%;
+  display:block;
+  width: min(700px, 95%);
 }
 .credits_title {
   color:yellow;
@@ -369,24 +368,25 @@ footer {
   font-family: "8bitOperatorPlus-Bold";
   margin-bottom: 5px;
   margin-top: 50px;
+  text-align:left;
 }
 .credits_line {
   display:grid;
   align-items:left;
-  
-  grid-template-columns: auto auto auto;
+  grid-template-columns: min(50%, 345px) min(50%, 345px);
+  width: min(100%);
 }
 .credits_text {
   font-size:min(20px, 4vw);
   font-family: "8bitOperatorPlus-Regular";
-  width: min(30rem, 40vw);
+  text-align:left;
   margin-bottom: 4px;
 }
 .credits_details {
   font-size:min(20px, 4vw);
   font-family: "8bitOperatorPlus-Regular";
-  width: 30rem;
   margin-bottom: 4px;
+  text-align:right;
 }
 @media (max-width: 768px) {
   nav {
