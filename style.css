@@ -242,6 +242,9 @@ footer {
   
   margin: 0;
 }
+.progress_report h5 {
+  font-weight: normal;
+}
 .yellow_text {
   color:#F9FF10;
 }
